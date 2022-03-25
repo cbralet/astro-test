@@ -1,0 +1,16 @@
+---
+import HeaderLayout from '@layouts/Header.astro'
+import FooterLayout from '@layouts/Footer.astro'
+import MainLayout from '@layouts/Main.astro'
+---
+<body>
+  <slot name="body-top"></slot>
+  <HeaderLayout></HeaderLayout>
+  <MainLayout>
+    <slot name="main-top" slot="main-top"><!-- none in Body Main top --></slot>
+    <slot name="main-middle" slot="main-middle"><!-- none in Body Main top --></slot>
+    <slot name="main-bottom" slot="main-bottom"><!-- none in Body Main bottom --></slot>
+  </MainLayout>
+  <FooterLayout></FooterLayout>
+  <slot name="body-bottom"></slot>
+</body>

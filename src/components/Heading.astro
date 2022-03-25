@@ -1,0 +1,4 @@
+---
+const { level = '1' } = Astro.props
+---
+<Fragment set:html={'<h' + level + '>'}></Fragment><slot>none in slot of heading</slot><Fragment set:html={'</h' + level + '>'}></Fragment>

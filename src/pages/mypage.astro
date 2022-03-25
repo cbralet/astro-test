@@ -1,0 +1,10 @@
+---
+import Page from '@layouts/Page.astro'
+import Heading from '@components/Heading.astro'
+const title = 'my title'
+const heading = title + ' - ' + 'in heading'
+---
+<Page title={title}>
+  <div slot="body-top">mypage.astro - title: {title}</div>
+  <Heading slot="main-middle" level="1">{heading}</Heading>
+</Page>
