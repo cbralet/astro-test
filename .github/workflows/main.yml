@@ -4,7 +4,7 @@
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
   githubEmail: cyril.bralet@gmail.com
-  deployToRepo: cbralet.github.io
+  deployToRepo: astro-test
 
 name: Github Pages Astro CI
 
