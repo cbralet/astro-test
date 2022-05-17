@@ -8,17 +8,19 @@
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 	
-<link rel="stylesheet" href="/astro-test/assets/index.c2e47842.css"></link><style astro-style="true">astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration astro-script="//script-0">import setup from './visible.25924317.js';
-setup("24dDz0", {name:"ReactCounter",value: true}, async () => {
-  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("./ReactCounter.421a0ccf.js"), import("./client.cb81e09a.js")]);
-  return (el, children) => hydrate(el)(Component, {}, children);
+<link rel="stylesheet" href="/astro-test/assets/asset.b8ea59ce.css"></link><style>astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration>import setup from './entry.9125fc96.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("X4CIg", {name:"ReactCounter",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("./entry.c65aa965.js"), import("./entry.2ded6389.js")]);
+  return (el, children) => hydrate(el)(Component, {}, children, {"client":"visible"});
 
 });
 </script>
-<script type="module" data-astro-component-hydration astro-script="//script-1">import setup from './visible.25924317.js';
-setup("PB9H1", {name:"VueCounter",value: true}, async () => {
-  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("./VueCounter.83b91d59.js"), import("./client.ad5751e8.js")]);
-  return (el, children) => hydrate(el)(Component, {"class":"astro-3AUBDGQD"}, children);
+<script type="module" data-astro-component-hydration>import setup from './entry.9125fc96.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z24GLeK", {name:"VueCounter",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("./entry.d43e704e.js"), import("./entry.ffefde62.js")]);
+  return (el, children) => hydrate(el)(Component, {"class":"astro-3AUBDGQD"}, children, {"client":"visible"});
 
 });
 </script>
@@ -40,19 +42,19 @@ setup("PB9H1", {name:"VueCounter",value: true}, async () => {
 	<section class="astro-IZYAIJ4S">
 		<h2 class="astro-IZYAIJ4S" id="-project-structure">🚀 Project Structure</h2>
 <p class="astro-IZYAIJ4S">Inside of your Astro project, you’ll see the following folders and files:</p>
-<pre class="language-null astro-IZYAIJ4S"><code is:raw="" class="language-null">/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json</code></pre>
-<p class="astro-IZYAIJ4S">Astro looks for <code class="astro-IZYAIJ4S">.astro</code> or <code class="astro-IZYAIJ4S">.md</code> files in the <code class="astro-IZYAIJ4S">src/pages/</code> directory.
+<pre is:raw class="astro-code astro-IZYAIJ4S" style="background-color: #0d1117; overflow-x: auto;"><code is:raw><span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">/</span>
+<span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">├── public/</span>
+<span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">│   └── favicon.ico</span>
+<span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">├── src/</span>
+<span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">│   ├── components/</span>
+<span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">│   │   └── Tour.astro</span>
+<span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">│   └── pages/</span>
+<span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">│       └── index.astro</span>
+<span class="line astro-IZYAIJ4S" &#x3C;span="" style="color: #c9d1d9">└── package.json</span></code></pre>
+<p class="astro-IZYAIJ4S">Astro looks for <code class="astro-IZYAIJ4S" is:raw>.astro</code> or <code class="astro-IZYAIJ4S" is:raw>.md</code> files in the <code class="astro-IZYAIJ4S" is:raw>src/pages/</code> directory.
 Each page is exposed as a route based on its file name.</p>
-<p class="astro-IZYAIJ4S">There’s nothing special about <code class="astro-IZYAIJ4S">src/components/</code>, but that’s where we like to put any Astro/React/Vue/Svelte/Preact components.</p>
-<p class="astro-IZYAIJ4S">Any static assets, like images, can be placed in the <code class="astro-IZYAIJ4S">public/</code> directory.</p>
+<p class="astro-IZYAIJ4S">There’s nothing special about <code class="astro-IZYAIJ4S" is:raw>src/components/</code>, but that’s where we like to put any Astro/React/Vue/Svelte/Preact components.</p>
+<p class="astro-IZYAIJ4S">Any static assets, like images, can be placed in the <code class="astro-IZYAIJ4S" is:raw>public/</code> directory.</p>
 
 	</section>
 
@@ -76,8 +78,8 @@ Each page is exposed as a route based on its file name.</p>
 
 		-->
 
-		<astro-root uid="24dDz0"><div id="react" class="counter"><button>-</button><pre>0</pre><button>+</button></div></astro-root>
+		<astro-root uid="X4CIg"><div id="react" class="counter" data-reactroot=""><button>-</button><pre>0</pre><button>+</button></div></astro-root>
 
-		<astro-root uid="PB9H1"><div id="vue" class="counter astro-3AUBDGQD"><button>-</button><pre>0</pre><button>+</button></div></astro-root>
+		<astro-root uid="Z24GLeK"><div id="vue" class="counter astro-3AUBDGQD"><button>-</button><pre>0</pre><button>+</button></div></astro-root>
 	</main>
 </body></html>
