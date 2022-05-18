@@ -38,7 +38,8 @@ const sitePathname = Astro.site?.pathname ? Astro.site.pathname : '/'
 	<main>
 		<header>
 			<div>
-				<img width="60" height="80" src={sitePathname + "assets/logo.svg"} alt="Astro logo">
+				<!-- <img width="60" height="80" src={sitePathname + "assets/logo.svg"} alt="Astro logo"> -->
+        <img width="60" height="80" src={(await import('/assets/logo.svg')).default} alt="Astro logo">
 				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
 			</div>
 		</header>
