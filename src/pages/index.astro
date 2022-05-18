@@ -13,7 +13,6 @@ import VueCounter from '../components/VueCounter.vue';
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
 let title = 'My Astro Site';
-const sitePathname = Astro.site?.pathname ? Astro.site.pathname : '/'
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -23,7 +22,7 @@ const sitePathname = Astro.site?.pathname ? Astro.site.pathname : '/'
 	<meta name="viewport" content="width=device-width">
 	<title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href={(await import('/favicon.ico')).default} />
 
 	<style>
 		header {
