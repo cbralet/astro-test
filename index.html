@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="astro-6J6NLYW5">
+<html lang="en" class="astro-CYACE7S6">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
@@ -8,15 +8,38 @@
 	<link rel="icon" type="image/x-icon" href="/astro-test/favicon.ico">
 
 	
-<link rel="stylesheet" href="/astro-test/assets/asset.eab3466e.css"></link>
+<link rel="stylesheet" href="/astro-test/assets/asset.f36fc399.css"></link><style>astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration>import setup from './entry.9125fc96.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("1e01IB", {name:"VueCounter",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("./entry.733bf645.js"), import("./entry.0ec1568b.js")]);
+  return (el, children) => hydrate(el)(Component, {"class":"astro-CYACE7S6"}, children, {"client":"visible"});
+
+});
+</script>
+<script type="module" data-astro-component-hydration>import setup from './entry.9125fc96.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("e8suD", {name:"ReactCounter",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("./entry.79ef2bd7.js"), import("./entry.bfce7254.js")]);
+  return (el, children) => hydrate(el)(Component, {}, children, {"client":"visible"});
+
+});
+</script>
+<script type="module" data-astro-component-hydration>import setup from './entry.9125fc96.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("1FfiQn", {name:"Counter",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("./entry.b92ebf65.js"), import("./entry.bfce7254.js")]);
+  return (el, children) => hydrate(el)(Component, {"count":0}, children, {"client":"visible"});
+
+});
+</script>
 </head>
 <body>
-	<main class="astro-6J6NLYW5">
-		<header class="astro-6J6NLYW5">
-			<div class="astro-6J6NLYW5">
+	<main class="astro-CYACE7S6">
+		<header class="astro-CYACE7S6">
+			<div class="astro-CYACE7S6">
 				<!-- <img width="60" height="80" src={sitePathname + "assets/logo.svg"} alt="Astro logo"> -->
-        <img width="60" height="80" src="/astro-test/assets/logo.svg" alt="Astro logo" class="astro-6J6NLYW5">
-				<h1 class="astro-6J6NLYW5">Welcome to <a href="https://astro.build/" class="astro-6J6NLYW5">Astro</a></h1>
+        <img width="60" height="80" src="/astro-test/assets/logo.svg" alt="Astro logo" class="astro-CYACE7S6">
+				<h1 class="astro-CYACE7S6">Welcome to <a href="https://astro.build/" class="astro-CYACE7S6">Astro</a></h1>
 			</div>
 		</header>
 
@@ -64,8 +87,10 @@ Each page is exposed as a route based on its file name.</p>
 
 		-->
 
-		<!-- <ReactCounter client:visible /> -->
+    <astro-root uid="1FfiQn"><div class="counter"><button>-</button><pre>0<!-- --></pre><button>+</button></div><div class="counter-message"><astro-fragment><h1 class="astro-CYACE7S6">Hello, React!</h1></astro-fragment></div></astro-root>
 
-		<!-- <VueCounter client:visible /> -->
+		<astro-root uid="e8suD"><div id="react" class="counter"><button>-</button><pre>0<!-- --></pre><button>+</button></div></astro-root>
+
+		<astro-root uid="1e01IB"><div id="vue" class="counter astro-CYACE7S6"><button>-</button><pre>0</pre><button>+</button></div></astro-root>
 	</main>
 </body></html>
